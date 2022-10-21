@@ -1,0 +1,44 @@
+You have entered dangerous grounds!
+State your name:
+This is your ID number, John. Its useless but you can keep it safe if you want!
+1000
+Hi John! Welcome. Here is a brief explanation of this escape room.
+You can choose a room from 3 options of different themes.
+1. Sherlock Holmes
+2. Classic puzzles
+3. Alice in Wonderland
+Each room will have a total of 3 problems you will have to answer. you will have 10 tries to answer each problem!
+If you dont manage to answer the problem after 10 tries, you will be given the next question
+remember you cannot exit the room until you run out of tries or manage to solve every problem!
+Please enter 1, 2 or 3 for your room of choice:
+That is not a valid entry. Here is the list of rooms again:
+1. Sherlock Holmes
+2. Classic puzzles
+3. Alice in Wonderland
+Please choose 1, 2 or 3 for your room of choice:Welcome to Alice in Wonderland, John! We need you to solve some problems ASAP and clarify some things before we let you go.
+
+Here is your first puzzle. Are you ready!
+Why is the madhatter called the madhatter? Because he is ---.
+That is wrong!  Perhaps you could use a bit more imagination!
+That is correct, looks like you are mad enough to make it out of this place!
+I see the madhatter's madness is rubbing off on you. Here is your second puzzle.
+Alice shrinks by drinking a ----- -- ------.
+That is wrong!  Perhaps you could use a bit more imagination!
+That is wrong!  Perhaps you could use a bit more imagination!
+That is wrong!  Perhaps you could use a bit more imagination!
+That is wrong!  Perhaps you could use a bit more imagination!
+That is wrong!  Perhaps you could use a bit more imagination!
+That is wrong!  Perhaps you could use a bit more imagination!
+That is wrong!  Perhaps you could use a bit more imagination!
+That is wrong!  Perhaps you could use a bit more imagination!
+this is your final try to answer this question!
+ please enter you answer:
+You have answered incorrectly 10 times. You cannot continue this question, or else you will be late for a very important date!
+I wasn't expecting you to make it so far! Here is your last problem
+What animal does Alice follow into Wonderland?
+Remember to think hard and be specific!
+That is wrong!  Perhaps you could use a bit more imagination!
+That is correct, looks like you are mad enough to make it out of this place!
+I see you have managed to solve only 2 problems!
+Well I don't suppose you had plans outside of Wonderland did you?
+I shall keep a record of your scores in case you decide to ever come back to break them.

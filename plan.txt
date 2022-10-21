@@ -1,0 +1,229 @@
+Project Specification - Major Practical
+
+Introduction:
+
+Our project simulates an escape room experience. Players can choose a theme for their experience and can register themselves as new players. The themes that players can select are Alice in Wonderland, classic puzzles and Sherlock Holmes. Once players enter their chosen room, they will be timed and will have to solve a set of problems in the given time limit. The set of problems provided will be in relation to the theme of the room.
+
+
+Design Description:
+
+Memory allocation from the stack and the heap
+Arrays: We will use arrays and allocate users’ personal information and user input for each problem dynamically.
+Strings: Worded puzzles, names and descriptions.
+Objects: building, room, person.
+User Input and Output
+I/O of different data types: player enters information and selects room, answers problems with both numbers and words and is given different responses accordingly.
+Object-oriented programming and design
+Inheritance
+Several rooms available for players to choose based on themes. Each individual room, taking their name from their theme, inherits from the parent class ‘room’, specifically the abstract function compare_pzl_answers
+Polymorphism
+Combined with the abstract class, compare_pzl_answers function takes in the parameters of the correct answer to the question and that given by the user, therefore having different parameters for each possible question. The output of the function also changes for each room theme. Parameters take the form of both int and string.
+Function overloading (same function name with different parameters types each time)
+Function overriding (same function name and parameter type)
+Abstract Classes
+Compare_pzl_answers function takes in the parameters of the correct answer and the answer input by the user and compares the answers. Different questions and answers based on room theme, as well as response given regarding whether the user answer is correct.
+(maybe time?)
+
+Class diagram:
+room class
+ Room();
+ Room(string r_name, string r_theme);
+string name;
+string theme;
+string get_name();
+string get_theme();
+virtual bool compare_pzl_answers();
+virtual ~Room();
+
+Alice in wonderland
+Alice()
+Alice(person p_name)
+Person player;
+bool compare_pzl_answers();
+string pzi_answer;  (i = 1-3 for 3 puzzles)
+string give_puzzle1();
+string give_puzzle2();
+string give_puzzle3();
+~Alice()
+
+Classic Puzzles
+Puzzles()
+Puzzles(person p_name)
+Person player;
+Bool compare_pzl_answers()
+string answer i ( (1,2 or 3) Private variables)
+string give_puzzle1();
+string give_puzzle2();
+string give_puzzle3();
+int getpuzzle_answer(int i);
+ ~Puzzles();
+
+Sherlock holmes
+Sherlock();
+Sherlock(Person s_player);
+Person player;
+int pzi_answer;         (i = 1,2,3)
+ bool compare_pzl_answers();
+answer_response
+Int give_puzzle1();
+string give_puzzle2();
+string give_puzzle3();
+ ~Sherlock();
+
+
+Person
+Person()
+Person(string p_name)
+String name
+Static int my_id
+Int ID
+Void set_highscore(int new_highscore)
+Int get_highscore()
+
+Description:
+Room: The behaviours included in ‘room’ include the ability for players to choose from three escape room themes, and allocate a name for the room.
+Person: Abstract class. The behaviours included in this class are the intake of information about the user (name), the allocation of an ID number for the player and the virtual function used to compare player answers to the correct answers, which is a function required in all three subclasses that represent the themed rooms.
+Alice in Wonderland: Sub class, inheriting from ‘room’ and including user input stored in ‘person’. The behaviours include the presentation of puzzles, comparing player input of answers to the correct answers and presenting an output reflecting the players’ success, with the language of output designed to reflect the theme of the room.
+Classic puzzles: Sub class, inheriting from ‘room’ and including user input stored in ‘person’. Includes the same behaviours as ‘Alice in Wonderland’, with puzzles and response output altered to reflect the theme.
+Sherlock Holmes: Sub class, inheriting from ‘room’ and including user input stored in ‘person’. Includes the same behaviours as ‘Alice in Wonderland’ and ‘Classic Puzzles’, with puzzles and response output again altered to reflect the theme.
+
+
+
+
+User interface:
+You have entered dangerous grounds!
+State your name:
+This is your ID number, [name]. Its useless but you can keep it safe if you want!
+[ID]
+Welcome [name]. Please select the theme for your room:
+Alice in Wonderland
+Classic Puzzles
+Sherlock Holmes
+Enter 1, 2 or 3 for you chosen theme:
+You have chosen [room theme]
+Your first problem is [problem 1]
+Please enter your answer:
+Your answer is correct! The next question is [question 2]
+OR
+Your answer is incorrect. Please try again. The problem is [question 1].
+Please enter your answer:
+(Etc. until all questions completed)
+Congratulations [name]! You have completed the escape room!
+
+
+Code style:
+
+Topics to learn before implementing code:
+·  	Polymorphism
+·  	Abstract classes
+·  	Virtual functions
+·  	Overriding and overloading
+·  	Pure virtual
+·  	How to implement a timer
+
+Header file for room:
+·  	//#ifndef ROOM_H
+·  	//#define ROOM_H
+·  	Variables such as name and theme
+·  	Functions for setting and getting timer
+·  	Abstract class (response to user)
+·  	Deconstructor
+·  	//#endif
+
+Cpp file for Room:
+
+·  	Include constructors for all functions
+·  	Include deconstructor
+·  	Include constructor for virtual functions??
+
+Header file for each room:
+
+·  	Include functions for each puzzles
+·  	Include functions for setting and getting timer
+·  	User_name
+·  	Functions for comparing answers and returning appropriate cout
+
+Header file for person:
+
+·  	Include name, ID
+·  	Implement ways for sign up and sign in options
+·  	For people who sign up include high score records
+
+
+Cpp file for person:
+
+·  	Constructors for all functions in header file
+
+Main file:
+
+·  	Create an escape room building
+·  	Create 3 escape rooms with the selected names and themes
+·  	Cout/cin user sign in option and get details
+·  	Start game at user command
+·  	C out puzzles and wait for answers
+·  	At every 10 min interval remind user of the time
+·  	If answer entered check for correct input
+·  	Output according to the theme
+·  	If user fails or passes tell them
+·  	Ask user if they want their score records to be kept for next time they attempt
+
+
+Testing
+Test Inputs / Expected Outputs:  (simple testing)
+Automated Testing  (a.out differ | code_file_name.cpp  file_2_name.cpp)
+Test cases: test both capital and lowercase letters, numbers, symbols, adding ‘a’ (e.g. ‘a piano’ rather than just ‘piano’), putting in fullstops, potential typos (e.g. two letters types in the incorrect order within a word such as ‘paino’), correct answers
+Perform unit testing for all possible units in the code without.
+Perform integration testing using the makefiles to compile and run all code together
+Test all possible areas of the code and ensure all errors and bugs have been addressed and eliminated until you convince yourself your code has no bugs
+Perform automated testing (can use makefiles and shortcut command lines used in the terminal to test particular parts of the code (i.e: a.out differ | code_file_name.cpp  file_2_name.cpp)).
+Perform regression testing, test every new line or lines of code added to make sure it doesn’t break the older code that was already working
+
+
+Timeline schedules:
+allocation:
+Rachael: Strings, Objects, I/O of different data types, Inheritance, Abstract classes, i/o Testing (regression testing as we go), testing (automated)
+Farishta: Arrays, Strings, Objects, I/O of different data types,Inheritance, polymorphism, i/o testing (regression testing as we go)
+
+Week 8 (1st week holidays)
+
+·  	Explore the task requirements and the rubric
+·  	Choose a topic / concept
+·  	Complete the draft for the project specifications
+·  	Learn how to do makefiles
+·  	Attempt at doing the basic structure of the code
+·  	Decide on a testing method
+·  	Learn about topics that you are not confident with
+
+Week 9 (2nd week of holidays)
+
+·  	Design a testing structure / strategy
+·  	If still unsure get help with your testing strategy
+·  	Test your program as you go
+·  	Add more detail to the code
+·  	Keep record of your testing
+·  	Create different testing situations to check how well the code works
+·  	How will you make your code better?
+·  	Present the project specifications get feedback and fix any problems in code
+
+Week 10
+
+·  	Before workshop and practicals add more to the code
+.   Demonstrate an early version of your program showing at least two of the features listed.
+·  	During practical have program almost finished
+·  	Test the program as we go
+·  	Present work and get feedback
+·  	Make SVN submissions
+·  	Check if the program meets the project specifications
+·  	Check if all rubric requirements are met
+·  	Finalise code by the end of the week
+
+
+Week 11:
+
+·  	Before workshop check if everything works, fix any remaining errors
+.
+·  	Go to an earlier workshop and get final feedback before making final SVN submission
+
+
+
+

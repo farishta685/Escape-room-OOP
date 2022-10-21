@@ -1,0 +1,71 @@
+You have entered dangerous grounds!
+State your name:
+This is your ID number, Jane Citizen!. Its useless but you can keep it safe if you want!
+1000
+Hi Jane Citizen!! Welcome. Here is a brief explanation of this escape room.
+You can choose a room from 3 options of different themes.
+1. Sherlock Holmes
+2. Classic puzzles
+3. Alice in Wonderland
+Each room will have a total of 3 problems you will have to answer. you will have 10 tries to answer each problem!
+If you dont manage to answer the problem after 10 tries, you will be given the next question
+remember you cannot exit the room until you run out of tries or manage to solve every problem!
+Please enter 1, 2 or 3 for your room of choice:
+
+Welcome to sherlock holme's myteries, Jane Citizen!! I see you want to become Sherlock's new sidekick!
+Prove yourself worthy by answering these questions and we shall think about it.
+Here is your first question.
+At what number on Baker St do Sherlock & Watson live?
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is correct, you are on your way to becoming a great detective.
+Here is your second puzzle. Are you ready!
+What is Watson's profession?
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is correct, you are on your way to becoming a great detective.
+Here is your third puzzle. are you ready!
+Who is Sherlock Holmes' arch enemy?
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is wrong!  When you have eliminated the impossible,
+whatever remains, however improbable, must be the truth.
+Please try again
+
+That is correct, you are on your way to becoming a great detective.
+I see you have managed to solve all three problems!
+You would make an excellent assistant to Mr Holmes
+I shall keep a record of your scores in case you decide to ever come back.

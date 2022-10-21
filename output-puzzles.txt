@@ -1,0 +1,14 @@
+What is your name? 
+Hi Herman! Here is a brief explanation of this escape room.
+You can choose a room from 3 options of different themes.
+1. Alice in Wonderland
+2. Classic puzzles
+3. Sherlock Holmes
+Please enter 1, 2 or 3 for your room of choice: 
+Your first puzzle is: What has many keys but cannot open a single door? -----
+Your answer is correct! Congratulations!
+Your second puzzle is: What gets wetter as it dries? -----
+Your answer is not correct! Please try again.
+Your answer is correct! Congratulations!
+Your third and final puzzle is: The poor have it, the rich need it and if you eat it you die. -------
+Your answer is correct! Congratulations!
